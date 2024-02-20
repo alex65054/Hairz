@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Arimo';
+    src: url('assets/fonts/Arimo-Bold/Arimo-Bold.eot'),
+    url('assets/fonts/Arimo-Bold/Arimo-Bold.woff') format('woff'),
+    url('assets/fonts/Arimo-Bold/Arimo-Bold.otf') format('opentype'),
+    url('assets/fonts/Arimo-Bold/Arimo-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'ChangaOne';
+    src: url('assets/fonts/ChangaOne/ChangaOne-Regular.eot'),
+    url('assets/fonts/ChangaOne/ChangaOne-Regular.woff') format('woff'),
+    url('assets/fonts/ChangaOne/ChangaOne-Regular.otf') format('opentype'),
+    url('assets/fonts/ChangaOne/ChangaOne-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('assets/fonts/Comfortaa/Comfortaa-Regular.eot'),
+    url('assets/fonts/Comfortaa/Comfortaa-Regular.woff') format('woff'),
+    url('assets/fonts/Comfortaa/Comfortaa-Regular.otf') format('opentype'),
+    url('assets/fonts/Comfortaa/Comfortaa-Regular.svg') format('svg');
+}

@@ -1,0 +1,208 @@
+@import url('fonts.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: stretch;
+    font-family: sans-serif;
+}
+
+header,footer {
+    background-color: #4C8F96;
+    color: white;
+    padding: 35px;
+}
+
+.brand-bg {
+    background-color: #1A1E33;
+}
+
+.spacer {
+    flex-grow: 1;
+ }
+
+ .content {
+    max-width: 1200px;
+    width: 100%;
+ }
+
+
+
+/* Header */
+
+ header {
+    display: flex;
+ }
+
+ header>.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: -50px;
+ }
+
+ h1 {
+    padding: 40px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+ }
+
+ header a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin: 10px;
+ }
+
+ .activenav {
+    background-color: #335F64;
+ }
+
+
+
+ /* Footer */
+
+footer {
+    display: flex;
+}
+
+footer>.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.share-container {
+    padding: 25px;
+    background-color: #387A82;
+    position: relative;
+}
+
+.share-container>a {
+    margin: 5px;
+}
+
+.f1, .f2, .f3 {
+    width: 30%;
+}
+
+.f2 {
+    text-align: center;
+}
+
+.f3 {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+
+
+ /* Main */
+
+ main {
+    background-color: #EDEDED;
+    flex-grow: 1;
+    padding: 50px 0;
+    display: flex;
+}
+
+
+
+/* First heading */
+
+ h2 {
+    color: #1A1E33;
+    font-family: 'ChangaOne', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 5%;
+}
+
+.heading-container {
+    border: solid #5FB3BD 2px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.heading-container>img {
+    height: 450px;
+}
+
+
+
+/* Short points of interest */
+
+.short-points-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.short-point {
+    min-width: 250px;
+    width: 24%;
+}
+
+.short-point>img {
+    width: 100%;
+    box-sizing: border-box;
+    border: solid #5FB3BD 5px;
+    border-radius: 5px;
+}
+
+.short-point>img {
+    box-shadow: 0 10px 10px black;
+}
+
+p {
+    line-height: 2rem;
+    margin-top: 1%;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+
+/* Long points of interest */
+
+.long-points-container {
+    display: flex;
+}
+
+#featured {
+
+}
+
+.long-points-container>* {
+    width: 44%;
+    box-sizing: border-box;
+}
+
+#hair-loss {
+
+}
+
+h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
