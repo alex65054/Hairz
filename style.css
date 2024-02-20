@@ -11,13 +11,17 @@ body {
 }
 
 header,footer {
-    background-color: #4C8F96;
-    color: white;
     padding: 35px;
 }
 
 .brand-bg {
     background-color: #1A1E33;
+    color: white;
+}
+
+.secondary-brand-bg {
+    background-color: #4C8F96;
+    color: white;
 }
 
 .spacer {
@@ -71,7 +75,7 @@ header,footer {
 
  /* Footer */
 
-footer {
+ footer {
     display: flex;
 }
 
@@ -85,7 +89,6 @@ footer>.content {
 .share-container {
     padding: 25px;
     background-color: #387A82;
-    position: relative;
 }
 
 .share-container>a {
@@ -102,10 +105,8 @@ footer>.content {
 
 .f3 {
     display: flex;
-    gap: 10px;
     justify-content: end;
 }
-
 
 
  /* Main */
@@ -138,7 +139,7 @@ footer>.content {
 }
 
 .heading-container>img {
-    height: 450px;
+    width: 40%;
 }
 
 
@@ -148,6 +149,7 @@ footer>.content {
 .short-points-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -159,9 +161,6 @@ footer>.content {
 
 .short-point>img {
     width: 100%;
-    box-sizing: border-box;
-    border: solid #5FB3BD 5px;
-    border-radius: 5px;
 }
 
 .short-point>img {
@@ -180,29 +179,102 @@ h4 {
     margin-top: 20px;
 }
 
+.thick-border {
+    border: solid #5FB3BD 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
 
 
 /* Long points of interest */
 
 .long-points-container {
     display: flex;
-}
-
-#featured {
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    gap: 10px;
 }
 
 .long-points-container>* {
-    width: 44%;
+    width: 49%;
+    min-width: 450px;
     box-sizing: border-box;
 }
 
-#hair-loss {
+.featured {
+    background-color: white;
+    padding: 20px;
+}
 
+.featured img {
+    width: 20%;
+}
+
+.featured h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px;
+}
+
+.featured p {
+    margin-top: 25px;
+}
+
+.hairstyle-info {
+    padding: 20px;
+}
+
+.hair-loss {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.hair-loss img {
+    margin: -8px 20px -8px 0;
+}
+
+.hair-loss p {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 5px 20px;
+    line-height: 2rem;
 }
 
 h3 {
     font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
     font-size: 1.5rem;
     color: white;
+    padding: 15px 35px;
+    width: max-content;
+    margin-top: -35px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .short-points-container {
+        justify-content: space-around;
+    }
+
+    .long-points-container {
+        justify-content: space-around;
+    }
+
+    .featured {
+        margin-bottom: 20px
+    }
+
+    .f1,.f2,.f3 {
+        width: 100%;
+    }
+
+    .f3 {
+        justify-content: center;
+    }
+
+    footer>.content {
+        flex-direction: column;
+    }
 }
