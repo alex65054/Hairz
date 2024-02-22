@@ -278,6 +278,10 @@ h3 {
         z-index: 8;
     }
 
+    .alt-menu>input:hover {
+        cursor: pointer;
+    }
+
     .alt-menu>input {
         box-sizing: border-box;
         position: absolute;
@@ -388,11 +392,16 @@ h3 {
     /* Header */
 
     header,footer {
-        padding: 15px;
+        padding: 35px 15px;
     }
 
     .alt-menu>input:checked ~ ul {
         top: 115px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 30px;
     }
 
 
