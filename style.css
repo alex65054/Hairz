@@ -1,4 +1,5 @@
 @import url('fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0');
 
 body {
     padding: 0;
@@ -26,6 +27,7 @@ header,footer {
 
 .spacer {
     flex-grow: 1;
+    min-width: 5px;
  }
 
  .content {
@@ -56,6 +58,7 @@ header,footer {
     font-family: 'Arimo', sans-serif;
     font-size: 4rem;
     margin: 0;
+    z-index: 20;
  }
 
  header a {
@@ -140,6 +143,10 @@ footer>.content {
 
 .heading-container>img {
     width: 40%;
+}
+
+nav .alt-menu {
+    display: none;
 }
 
 
@@ -254,17 +261,93 @@ h3 {
 }
 
 @media only screen and (max-width: 1200px) {
-    .short-points-container {
-        justify-content: space-around;
+    
+    /* Header */
+
+    /* Alt hamburger menu */
+
+    nav>a {
+        display: none;
     }
 
-    .long-points-container {
-        justify-content: space-around;
+    nav .alt-menu {
+        display: block;
     }
 
-    .featured {
-        margin-bottom: 20px
+    .menu-open, .menu-close {
+        z-index: 8;
     }
+
+    .alt-menu>input {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 9;
+        width: 4rem;
+        height: 4rem;
+        right: 15px;
+        opacity: 0;
+    }
+
+    .alt-menu>span {
+        box-sizing: border-box;
+        position: absolute;
+        right: 25px;
+        border-radius: 3px;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .alt-menu>input ~ .menu-close {
+        opacity: 0;
+        transition-duration: 250ms;
+    }
+
+    .alt-menu>input:checked ~ .menu-close {
+        opacity: 1;
+        transition-duration: 250ms;
+    }
+
+    .alt-menu>input:checked ~ ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0px;
+        text-align: center;
+        top: 155px;
+    }
+
+    .alt-menu ul {
+        display: none;
+    }
+
+    .alt-menu ul li {
+        background-color: #5FB3BD;
+    }
+
+    .alt-menu ul li a {
+        font-size: 1.5rem;
+        display: block;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .alt-menu ul li:nth-child(odd) {
+        background-color: #4FB0BD;
+    }
+
+    .alt-menu ul li:hover {
+        background-color: #335F64;
+    }
+
+    .alt-menu ul li:first-child {
+        height: 50px;
+        background-color: #5FB3BD;
+    }
+
+
+    
+    /* Footer */
 
     .f1,.f2,.f3 {
         width: 100%;
@@ -276,5 +359,79 @@ h3 {
 
     footer>.content {
         flex-direction: column;
+    }
+
+
+
+    /* Main content */
+
+    .short-point {
+        width: 350px;
+    }
+
+    .short-points-container {
+        justify-content: space-around;
+    }
+
+    .long-points-container {
+        justify-content: space-around;
+        width: 98%;
+    }
+
+    .featured {
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* Header */
+
+    header,footer {
+        padding: 15px;
+    }
+
+    .alt-menu>input:checked ~ ul {
+        top: 115px;
+    }
+
+
+
+
+    /* Main content */
+
+    .long-points-container>* {
+        min-width: 400px;
+    }
+
+    .heading-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .heading-container h2 {
+        position: absolute;
+        color: white;
+        text-shadow: 0 0 50px #1A1E33;
+        width: 80%;
+        text-align: center;
+    }
+
+    .heading-container img {
+        width: 100%;
+        order: 2
+    }
+
+    .hair-loss {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hair-loss img {
+        order: 2;
+        width: 100%;
+        margin: 0 0 -3.2vw 0;
     }
 }
