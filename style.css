@@ -74,6 +74,10 @@ header,footer {
     background-color: #335F64;
  }
 
+ nav .alt-menu {
+    display: none;
+}
+
 
 
  /* Footer */
@@ -143,10 +147,6 @@ footer>.content {
 
 .heading-container>img {
     width: 40%;
-}
-
-nav .alt-menu {
-    display: none;
 }
 
 
